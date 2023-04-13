@@ -1,4 +1,6 @@
-package minitest;
+package model;
+
+import model.Type;
 
 public interface Iphone {
     void searchPhone(String name);

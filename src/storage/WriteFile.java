@@ -1,4 +1,4 @@
-package minitest;
+package storage;
 
 public class WriteFile {
 

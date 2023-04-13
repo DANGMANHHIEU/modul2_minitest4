@@ -1,4 +1,4 @@
-package minitest;
+package model;
 
 public class Type {
     private String id;
@@ -35,4 +35,6 @@ public class Type {
                 ", name= " + name  +
                 "}";
     }
+
+
 }

@@ -1,4 +1,6 @@
-package minitest;
+package model;
+
+import model.Type;
 
 public class Contact {
     private String name;
