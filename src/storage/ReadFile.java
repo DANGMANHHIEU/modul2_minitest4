@@ -16,8 +16,12 @@ public class ReadFile<T> {
       contacts=(List<Contact>) fis.readObject();
       is.close();
       fis.close();
-    }catch (Exception e){
-     e.printStackTrace();
+    }catch (FileNotFoundException e) {
+      throw new RuntimeException(e);
+    } catch (IOException e) {
+      throw new RuntimeException(e);
+    } catch (ClassNotFoundException e) {
+      throw new RuntimeException(e);
     }
     return contacts;
   }
