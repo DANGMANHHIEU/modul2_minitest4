@@ -14,8 +14,10 @@ public class WriteFile<T> {
             oos.writeObject(contactList);
             os.close();
             oos.close();
-        }catch (Exception e){
-            e.printStackTrace();
+        }catch (FileNotFoundException e){
+         throw new RuntimeException(e);
+        }catch (IOException e){
+            throw new RuntimeException(e);
         }
     }
 }
