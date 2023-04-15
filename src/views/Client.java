@@ -10,8 +10,8 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Client {
-    public static List<Contact> contacts = ReadFile.readFile();
-//    public static List<Contact> contacts = new ArrayList<>();
+   public static List<Contact> contacts = ReadFile.readFile();
+  // public static List<Contact> contacts = new ArrayList<>();
     public static PhoneBookManage phoneBookManage = new PhoneBookManage(contacts);
 
 
@@ -81,7 +81,7 @@ public class Client {
         Scanner sc = new Scanner(System.in);
         int choice = 0;
         do {
-            System.out.println("Vui lòng chọn chức năng:");
+
             System.out.println(
                     "1.Tìm kiếm số theo tên.\n"
                             + "2.Sắp xếp danh bạ. \n"
@@ -91,20 +91,27 @@ public class Client {
                             + "6.Thêm số điện thoại.\n"
                             + "0.Exit");
             System.out.println();
+            System.out.println("Vui lòng chọn chức năng:");
             choice = sc.nextInt();
             switch (choice) {
                 case 1:
                     search();
+                    break;
                 case 2:
                     sort();
+                    break;
                 case 3:
                     display();
+                    break;
                 case 4:
                     delete();
+                    break;
                 case 5:
                     editPhone();
+                    break;
                 case 6:
                     insert();
+                    break;
                 default:
                     System.out.println("Mời chọn lại chức năng!!!");
             }
